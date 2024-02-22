@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    animation: scroll 100s linear infinite;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(#EFECEC, #11111199), 
+        url("https://img.freepik.com/free-photo/starry-night-sky_1048-11828.jpg?w=1060&t=st=1708617611~exp=1708618211~hmac=be343b44fbd9d3f4984bd75a74253339fde20289e3e878eb74e3153e06d5589f");
+}
+
+@keyframes scroll {
+    100% {
+        background-position: 0 -400%
+    }
+}
+
+@media only screen and (max-width: 559px) {
+    body {
+        height: 100vh;
+        width: 100vw;
+        background-size: cover;
+        background-position: center;
+        background-image: url("https://img.freepik.com/free-photo/starry-night-sky_1048-11828.jpg?w=1060&t=st=1708617611~exp=1708618211~hmac=be343b44fbd9d3f4984bd75a74253339fde20289e3e878eb74e3153e06d5589f");
+        color: white; 
+    }
+}
+
+@media only screen and (min-width: 560px) and (max-width: 767px) {
+    p {
+        font-size: large;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+}

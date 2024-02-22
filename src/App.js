@@ -19,8 +19,6 @@ const planets = [
   'Pluto'
 ]
 
-
-
 const planetId = planets.map((planet,idx) => ( 
 <Route key={idx} path={`/${planet}`} element={<PlanetInfo planet={planet}/>}>{planet}</Route>
 )) 
@@ -32,7 +30,6 @@ const planetId = planets.map((planet,idx) => (
         <Route path='/' element={<Home/>}/>
         {planetId}
       </Routes>
-
     </div>
   );
 }
