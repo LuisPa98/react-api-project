@@ -53,6 +53,19 @@ header {
     transform: translateX(0px);
   }
 
+  .nav-link {
+    text-decoration: none;
+    color: black;
+    transition: color .3s ease-in-out, border .5s ease-in-out;
+  }
+
+  .nav-link:hover {
+    border-bottom: 3px solid #FC6736;
+    padding: 0 2rem .4rem;
+    color: #FC6736;
+    text-shadow: 1px 1px 1px black;
+  }
+
   @media only screen and (max-width: 559px) {
     .nav-menu {
         position: fixed;
@@ -61,9 +74,14 @@ header {
         height: 0;
         overflow: hidden;
         max-width: 100%;
-        font-size: 18px;
+        font-size: 22px;
         max-height: 100%;
         transform: translateX(500px);
         transition: transform ease-in-out 0.4s;    
     }
+
+    .nav-menu.show-menu {
+        height: 91%;
+    }
   }
+

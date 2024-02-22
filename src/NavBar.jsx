@@ -17,7 +17,7 @@ function NavBar({ planets }) {
   }
 
   const stylesline1 = {
-    transform: display? `rotate(45deg) translate(0.85em, 1.0em)` : `rotate(0)`,
+    transform: display? `rotate(45deg) translate(0.85em, 1em)` : `rotate(0)`,
     transition: display? `transform ease-in-out .2s`: `transform ease-in-out .2s`                                  
   }
 
