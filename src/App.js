@@ -30,6 +30,7 @@ const planetId = planets.map((planet,idx) => (
         <Route path='/' element={<Home/>}/>
         {planetId}
       </Routes>
+      <Icons/>
     </div>
   );
 }

@@ -1,0 +1,12 @@
+.icon-container {
+    height: 32vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+img {
+    opacity: .3;
+    width: 2rem;
+    height: 2rem;
+}
