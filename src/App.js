@@ -26,11 +26,13 @@ const planetId = planets.map((planet,idx) => (
   return (
     <div className="App">
       <NavBar planets={planets}/>
-      <Routes>
-        <Route path='/' element={<Home/>}/>
-        {planetId}
-      </Routes>
-      <Icons/>
+      <div className='mainContainer'>
+        <Routes>
+          <Route path='/' element={<Home/>}/>
+          {planetId}
+        </Routes>
+        <Icons/>
+      </div>
     </div>
   );
 }
