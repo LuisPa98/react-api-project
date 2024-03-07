@@ -9,7 +9,7 @@ function NavBar({ planets }) {
   const [display, setDisplay] = useState(false)
 
   function handleClick() {
-    return setDisplay(false)
+    return setDisplay()
   }
 
   const stylesHamburger = {
